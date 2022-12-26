@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="abc"></p>
+    <script>
+        var marks=prompt("exam");
+        if (marks<=10){
+            document.getElementById("abc").innerHTML=("fail");
+
+        }
+        else if (marks>10 && marks<20){
+            document.getElementById("abc").innerHTML=("pass with grace");
+        }
+        else if (marks>20 && marks<=90)
+        {
+            document.getElementById("abc").innerHTML=("pass with a+");
+        }
+        else {
+            document.getElementById("abc").innerHTML=("excellent");
+        }
+
+    </script>
+</body>
+</html>
